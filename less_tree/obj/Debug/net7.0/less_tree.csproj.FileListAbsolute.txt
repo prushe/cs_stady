@@ -1,0 +1,15 @@
+C:\user's-data\cslang\stadyGB\less_tree\obj\Debug\net7.0\less_tree.csproj.AssemblyReference.cache
+C:\user's-data\cslang\stadyGB\less_tree\obj\Debug\net7.0\less_tree.GeneratedMSBuildEditorConfig.editorconfig
+C:\user's-data\cslang\stadyGB\less_tree\obj\Debug\net7.0\less_tree.AssemblyInfoInputs.cache
+C:\user's-data\cslang\stadyGB\less_tree\obj\Debug\net7.0\less_tree.AssemblyInfo.cs
+C:\user's-data\cslang\stadyGB\less_tree\obj\Debug\net7.0\less_tree.csproj.CoreCompileInputs.cache
+C:\user's-data\cslang\stadyGB\less_tree\bin\Debug\net7.0\less_tree.exe
+C:\user's-data\cslang\stadyGB\less_tree\bin\Debug\net7.0\less_tree.deps.json
+C:\user's-data\cslang\stadyGB\less_tree\bin\Debug\net7.0\less_tree.runtimeconfig.json
+C:\user's-data\cslang\stadyGB\less_tree\bin\Debug\net7.0\less_tree.dll
+C:\user's-data\cslang\stadyGB\less_tree\bin\Debug\net7.0\less_tree.pdb
+C:\user's-data\cslang\stadyGB\less_tree\obj\Debug\net7.0\less_tree.dll
+C:\user's-data\cslang\stadyGB\less_tree\obj\Debug\net7.0\refint\less_tree.dll
+C:\user's-data\cslang\stadyGB\less_tree\obj\Debug\net7.0\less_tree.pdb
+C:\user's-data\cslang\stadyGB\less_tree\obj\Debug\net7.0\less_tree.genruntimeconfig.cache
+C:\user's-data\cslang\stadyGB\less_tree\obj\Debug\net7.0\ref\less_tree.dll
