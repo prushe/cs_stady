@@ -37,4 +37,20 @@ System.Console.Write($"Введите степень:");
 getDegree();
 System.Console.Write($"Результат {num} ^ {degree} = ");
 getResult();
+System.Console.WriteLine();
 
+// Task Twentyseven
+int sumDigit = 0;
+string numsec;
+void getNumsec()
+{
+    numsec = System.Console.ReadLine();
+    for (int i = 0; i < numsec.Length; i ++)
+    {
+        sumDigit += Convert.ToInt32(Convert.ToString(numsec[i])); 
+    }
+
+}
+System.Console.Write("Сумма цифр числа.\nВведите число:");
+getNumsec();
+System.Console.Write($"Сумма цифр числа {numsec} = {sumDigit}");
