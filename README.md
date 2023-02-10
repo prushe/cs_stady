@@ -1,1 +1,1 @@
-"# cs_stady" 
+# cs_stady
