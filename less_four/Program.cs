@@ -3,26 +3,20 @@ double num;
 double degree;
 double result;
 
-void getNum()
-{
-    num = Convert.ToInt32(System.Console.ReadLine());
-}
-
-void getDegree()
-{
-    degree = Convert.ToInt32(System.Console.ReadLine());
-}
-
 void getResult()
 {
-    result = Math.Pow(num, degree);
+    result = num;
+    for (int i = 1; i < degree; i++)
+    {
+        result *= num;
+    }
     System.Console.WriteLine(result);
 }
 
 System.Console.Write($"Степень числа. \nВведите число:");
-getNum();
+num = Convert.ToInt32(System.Console.ReadLine());
 System.Console.Write($"Введите степень:");
-getDegree();
+degree = Convert.ToInt32(System.Console.ReadLine());
 System.Console.Write($"Результат {num} ^ {degree} = ");
 getResult();
 System.Console.WriteLine();
@@ -39,6 +33,7 @@ void getNumsec()
 System.Console.Write("Сумма цифр числа.\nВведите число:");
 getNumsec();
 System.Console.Write($"Сумма цифр числа {numsec} = {sumDigit}");
+System.Console.WriteLine();
 
 // Task Twentynine
 void randEigthNum(int arrLengt)
