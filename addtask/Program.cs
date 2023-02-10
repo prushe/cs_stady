@@ -14,5 +14,5 @@ int[] multiArray(int[] array)
 System.Console.Write("Введите размер массива:");
 generArray(Convert.ToInt32(System.Console.ReadLine()), 0, 10, out int[] array);
 System.Console.WriteLine($"[{string.Join(", ", array)}]");
-System.Console.Write("Колличество четных чисел = ");
+System.Console.Write("Перемножение внутри массива = ");
 System.Console.WriteLine($"[{string.Join(", ", multiArray(array))}]");
