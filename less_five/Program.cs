@@ -42,11 +42,39 @@ int sumUnevenArray(int[] array)
         sum += array[i];
     return sum;
 }
+
 System.Console.Write("Введите размер массива:");
-generArray(Convert.ToInt32(System.Console.ReadLine()), 0, 1000, out array);
+generArray(Convert.ToInt32(System.Console.ReadLine()), 0, 100, out array);
 System.Console.WriteLine($"[{string.Join(", ", array)}]");
 System.Console.Write("Сумма нечетных позиций = ");
 System.Console.WriteLine(sumUnevenArray(array));
 System.Console.WriteLine();
 
 // Task thirtyeight
+void valueMaxMin(int[] array, out int max, out int min)
+{
+    max = array[0];
+    for (int i = 0; i < array.Length; i++) // max num
+    {
+        if (array[i] > max)
+            max = array[i];
+    }
+    min = max;
+    for (int i = 0; i < array.Length; i++) // max min
+    {
+        if (array[i] < min)
+            min = array[i];
+    }
+}
+
+int diffBetweenValues(int[] array)
+{
+    valueMaxMin(array, out int max, out int min);
+    int diff = max - min;
+    return diff;
+}
+
+System.Console.Write("Введите размер массива:");
+generArray(Convert.ToInt32(System.Console.ReadLine()), 0, 100, out array);
+System.Console.WriteLine($"[{string.Join(", ", array)}]");
+System.Console.WriteLine($"Разница между максимальным и минимальным элементом = {diffBetweenValues(array)}");
