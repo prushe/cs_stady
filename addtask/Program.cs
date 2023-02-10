@@ -12,7 +12,7 @@ int[] multiArray(int[] array)
     return multi;
 }
 System.Console.Write("Введите размер массива:");
-generArray(Convert.ToInt32(System.Console.ReadLine()), 0, 10, out int[] array);
+generArray(Convert.ToInt32(System.Console.ReadLine()), start: 0, end: 10, out int[] array);
 System.Console.WriteLine($"[{string.Join(", ", array)}]");
 System.Console.Write("Перемножение внутри массива = ");
 System.Console.WriteLine($"[{string.Join(", ", multiArray(array))}]");
