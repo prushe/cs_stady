@@ -1,0 +1,15 @@
+U:\data\lang\cs-lang\stadyGB\less_four\obj\Debug\net7.0\less_four.csproj.AssemblyReference.cache
+U:\data\lang\cs-lang\stadyGB\less_four\obj\Debug\net7.0\less_four.GeneratedMSBuildEditorConfig.editorconfig
+U:\data\lang\cs-lang\stadyGB\less_four\obj\Debug\net7.0\less_four.AssemblyInfoInputs.cache
+U:\data\lang\cs-lang\stadyGB\less_four\obj\Debug\net7.0\less_four.AssemblyInfo.cs
+U:\data\lang\cs-lang\stadyGB\less_four\obj\Debug\net7.0\less_four.csproj.CoreCompileInputs.cache
+U:\data\lang\cs-lang\stadyGB\less_four\bin\Debug\net7.0\less_four.exe
+U:\data\lang\cs-lang\stadyGB\less_four\bin\Debug\net7.0\less_four.deps.json
+U:\data\lang\cs-lang\stadyGB\less_four\bin\Debug\net7.0\less_four.runtimeconfig.json
+U:\data\lang\cs-lang\stadyGB\less_four\bin\Debug\net7.0\less_four.dll
+U:\data\lang\cs-lang\stadyGB\less_four\bin\Debug\net7.0\less_four.pdb
+U:\data\lang\cs-lang\stadyGB\less_four\obj\Debug\net7.0\less_four.dll
+U:\data\lang\cs-lang\stadyGB\less_four\obj\Debug\net7.0\refint\less_four.dll
+U:\data\lang\cs-lang\stadyGB\less_four\obj\Debug\net7.0\less_four.pdb
+U:\data\lang\cs-lang\stadyGB\less_four\obj\Debug\net7.0\less_four.genruntimeconfig.cache
+U:\data\lang\cs-lang\stadyGB\less_four\obj\Debug\net7.0\ref\less_four.dll
