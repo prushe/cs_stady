@@ -1,16 +1,4 @@
-﻿// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
-// 3, 5 -> 243 (3⁵)
-// 2, 4 -> 16
-// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
-// 452 -> 11
-// 82 -> 10
-// 9012 -> 12
-// Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
-// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
-// 6, 1, 33 -> [6, 1, 33]
-// После загрузки задания, вы можете проверить себя самостоятельно с помощью эталонного решения
-
-// task Twentyfive
+﻿// task Twentyfive
 double num;
 double degree;
 double result;
@@ -45,12 +33,22 @@ string numsec;
 void getNumsec()
 {
     numsec = System.Console.ReadLine();
-    for (int i = 0; i < numsec.Length; i ++)
-    {
-        sumDigit += Convert.ToInt32(Convert.ToString(numsec[i])); 
-    }
-
+    for (int i = 0; i < numsec.Length; i++)
+        sumDigit += Convert.ToInt32(Convert.ToString(numsec[i]));
 }
 System.Console.Write("Сумма цифр числа.\nВведите число:");
 getNumsec();
 System.Console.Write($"Сумма цифр числа {numsec} = {sumDigit}");
+
+// Task Twentynine
+void randEigthNum(int arrLengt)
+{
+    int[] numbes = new int[arrLengt];
+    var rnd = new Random();
+    for (int i = 0; i < arrLengt; i++)
+        numbes[i] = rnd.Next(100);
+    System.Console.WriteLine($"Ваши числа [{string.Join(", ", numbes)}]");
+}
+System.Console.WriteLine();
+System.Console.Write("Введите размер массива:");
+randEigthNum(Convert.ToInt32(System.Console.ReadLine()));
