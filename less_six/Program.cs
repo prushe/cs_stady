@@ -1,5 +1,4 @@
-﻿goto start;
-// Задача 41: Пользователь вводит с клавиатуры M чисел. 
+﻿// Задача 41: Пользователь вводит с клавиатуры M чисел. 
 // Посчитайте, сколько чисел больше 0 ввёл пользователь.
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
@@ -24,7 +23,7 @@ int MoreZero(int[] numList)
 int[] numList = ReadIntList("enter numbers separated by comanns: ");
 System.Console.WriteLine("numbers more zero: " + MoreZero(numList));
 System.Console.WriteLine();
-start:
+
 // Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, 
 // заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; 
 // значения b1, k1, b2 и k2 задаются пользователем.
