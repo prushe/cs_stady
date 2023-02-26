@@ -1,5 +1,6 @@
-﻿// task Fourti seven
-double[,] GenerateArray(int m, int n)
+﻿goto start;
+// task Fourti seven
+double[,] GenerateDoubleArray(int m, int n)
 {
     Random rand = new Random();
     double[,] array = new double[m, n];
@@ -12,7 +13,7 @@ double[,] GenerateArray(int m, int n)
     }
     return array;
 }
-void PrintArray(double[,] array)
+void PrintDoubleArray(double[,] array)
 {
     for (int i = 0; i <= array.GetUpperBound(0); i++)
     {
@@ -24,5 +25,53 @@ void PrintArray(double[,] array)
     }
 }
 
-double[,] myArray = GenerateArray(3, 4);
-PrintArray(myArray);
+double[,] myDoubleArray = GenerateDoubleArray(3, 4);
+PrintDoubleArray(myDoubleArray);
+System.Console.WriteLine();
+start:
+//task fiveteen
+int[,] GenerateIntArray(int m, int n)
+{
+    Random rand = new Random();
+    int[,] array = new int[m, n];
+    for (int i = 0; i <= array.GetUpperBound(0); i++)
+    {
+        for (int j = 0; j <= array.GetUpperBound(1); j++)
+        {
+            array[i, j] = rand.Next(0, 11);
+        }
+    }
+    return array;
+}
+void PrintIntArray(int[,] array)
+{
+    for (int i = 0; i <= array.GetUpperBound(0); i++)
+    {
+        for (int j = 0; j <= array.GetUpperBound(1); j++)
+        {
+            System.Console.Write(array[i, j] + "\t");
+        }
+        System.Console.WriteLine();
+    }
+}
+void PrintElementArray(int[,] array, int x, int y)
+{
+    string print = (x <= array.GetUpperBound(0) && y <= array.GetUpperBound(1)) ? Convert.ToString(array[x, y]) : "такого числа в массиве нет";
+    System.Console.WriteLine(print);
+}
+void ArrayAdress(out int x, out int y)
+{
+    int[] xy = Console.ReadLine().Split(",").Select(int.Parse).ToArray();
+    y = xy[0];
+    x = xy[1];
+}
+void UserMessage(string message)
+{
+    System.Console.Write(message);
+}
+int[,] myIntArray = GenerateIntArray(4, 4);
+PrintIntArray(myIntArray);
+UserMessage("Введите адрес элемента массива через зяпятую (X, Y): ");
+ArrayAdress(out int x, out int y);
+PrintElementArray(myIntArray, x, y);
+System.Console.WriteLine();
