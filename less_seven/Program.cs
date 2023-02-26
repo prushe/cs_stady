@@ -1,5 +1,4 @@
-﻿goto start;
-// task Fourti seven
+﻿// task Fourtin seven
 double[,] GenerateDoubleArray(int m, int n)
 {
     Random rand = new Random();
@@ -28,7 +27,7 @@ void PrintDoubleArray(double[,] array)
 double[,] myDoubleArray = GenerateDoubleArray(3, 4);
 PrintDoubleArray(myDoubleArray);
 System.Console.WriteLine();
-start:
+
 //task fiveteen
 int[,] GenerateIntArray(int m, int n)
 {
@@ -53,6 +52,7 @@ void PrintIntArray(int[,] array)
         }
         System.Console.WriteLine();
     }
+    System.Console.WriteLine();
 }
 void PrintElementArray(int[,] array, int x, int y)
 {
@@ -75,3 +75,21 @@ UserMessage("Введите адрес элемента массива чере�
 ArrayAdress(out int x, out int y);
 PrintElementArray(myIntArray, x, y);
 System.Console.WriteLine();
+
+// task fivetin two
+void ColAverage(int[,] array)
+{
+    for (int i = 0; i <= array.GetUpperBound(1); i++)
+    {
+        double colResult = 0;
+        for (int j = 0; j <= array.GetUpperBound(0); j++)
+        {
+            colResult += array[j, i];
+        }
+        colResult = Math.Round(colResult / (array.GetUpperBound(0) + 1), 2);
+        System.Console.Write(colResult + "\t");
+    }
+}
+myIntArray = GenerateIntArray(4, 4);
+PrintIntArray(myIntArray);
+ColAverage(myIntArray);
