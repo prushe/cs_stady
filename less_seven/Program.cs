@@ -23,7 +23,6 @@ void PrintDoubleArray(double[,] array)
         System.Console.WriteLine();
     }
 }
-
 double[,] myDoubleArray = GenerateDoubleArray(3, 4);
 PrintDoubleArray(myDoubleArray);
 System.Console.WriteLine();
