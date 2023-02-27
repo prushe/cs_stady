@@ -90,7 +90,6 @@ PrintIntArray(myIntArray);
 MinAverageLine(myIntArray);
 System.Console.WriteLine();
 
-strt:
 // task fivetin eight
 int[,] MtrixMultiply(int[,] myIntArrayOne, int[,] myIntArrayTwo)
 {
@@ -110,4 +109,39 @@ PrintIntArray(myIntArrayOne);
 PrintIntArray(myIntArrayTwo);
 int[,] resultIntArray = MtrixMultiply(myIntArrayOne, myIntArrayTwo);
 PrintIntArray(resultIntArray);
+System.Console.WriteLine();
+
+//task sixteen
+int[,,] GenerateInt3DArray(int m, int n, int h, int maxx)
+{
+    Random rand = new Random();
+    int[,,] array = new int[m, n, h];
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            for (int y = 0; y < array.GetLength(2); y++)
+            {
+                array[i, j, y] = rand.Next(0, maxx);
+            }
+        }
+    }
+    return array;
+}
+void PrintInt3DArray(int[,,] array)
+{
+    for (int y = 0; y < array.GetLength(0); y++)
+    {
+        for (int i = 0; i < array.GetLength(1); i++)
+        {
+            for (int j = 0; j < array.GetLength(2); j++)
+            {
+                System.Console.Write(array[i, j, y] + $"({i},{j},{y}) \t");
+            }
+            System.Console.WriteLine();
+        }
+    }
+}
+int[,,] myInt3DArray = GenerateInt3DArray(2, 2, 2, 101);
+PrintInt3DArray(myInt3DArray);
 System.Console.WriteLine();
