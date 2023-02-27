@@ -1,6 +1,6 @@
 ﻿goto strt;
 // task fivetin four
-int[,] GenerateIntArray(int m, int n)
+int[,] GenerateIntArray(int m, int n, int maxx)
 {
     Random rand = new Random();
     int[,] array = new int[m, n];
@@ -8,7 +8,7 @@ int[,] GenerateIntArray(int m, int n)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = rand.Next(0, 101);
+            array[i, j] = rand.Next(0, maxx);
         }
     }
     return array;
@@ -49,13 +49,12 @@ int[,] Arrange(int[,] array)
     }
     return array;
 }
-int[,] myIntArray = GenerateIntArray(4, 10);
+int[,] myIntArray = GenerateIntArray(4, 10, 101);
 PrintIntArray(myIntArray);
 myIntArray = Arrange(myIntArray);
 PrintIntArray(myIntArray);
 System.Console.WriteLine();
 
-strt:
 // task fivetin six
 int[] AverageLine(int[,] array)
 {
@@ -86,6 +85,29 @@ void MinAverageLine(int[,] array)
     int minLine = Min(averageLine);
     System.Console.WriteLine($"Строка с наименьшим средним арифметическим под №{minLine}");
 }
-myIntArray = GenerateIntArray(6, 2);
+myIntArray = GenerateIntArray(6, 2, 100);
 PrintIntArray(myIntArray);
 MinAverageLine(myIntArray);
+System.Console.WriteLine();
+
+strt:
+// task fivetin eight
+int[,] MtrixMultiply(int[,] myIntArrayOne, int[,] myIntArrayTwo)
+{
+    int[,] result = new int[myIntArrayOne.GetLength(0), myIntArrayTwo.GetLength(1)];
+    for (int i = 0; i < result.GetLength(0); i++)
+    {
+        for (int j = 0; j < result.GetLength(1); j++)
+        {
+            result[i, j] = myIntArrayOne[i, 0] * myIntArrayTwo[0, j] + myIntArrayOne[i, 1] * myIntArrayTwo[1, j];
+        }
+    }
+    return result;
+}
+int[,] myIntArrayOne = GenerateIntArray(2, 2, 10);
+int[,] myIntArrayTwo = GenerateIntArray(2, 2, 10);
+PrintIntArray(myIntArrayOne);
+PrintIntArray(myIntArrayTwo);
+int[,] resultIntArray = MtrixMultiply(myIntArrayOne, myIntArrayTwo);
+PrintIntArray(resultIntArray);
+System.Console.WriteLine();
