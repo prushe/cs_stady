@@ -1,4 +1,5 @@
-﻿// task fivetin four
+﻿goto strt;
+// task fivetin four
 int[,] GenerateIntArray(int m, int n)
 {
     Random rand = new Random();
@@ -24,7 +25,7 @@ void PrintIntArray(int[,] array)
     }
     System.Console.WriteLine();
 }
-int[,] arrange(int[,] array)
+int[,] Arrange(int[,] array)
 {
     for (int ic = 0; ic < array.GetLength(1) / 2 + 1; ic++)
     {
@@ -50,6 +51,41 @@ int[,] arrange(int[,] array)
 }
 int[,] myIntArray = GenerateIntArray(4, 10);
 PrintIntArray(myIntArray);
-myIntArray = arrange(myIntArray);
+myIntArray = Arrange(myIntArray);
 PrintIntArray(myIntArray);
 System.Console.WriteLine();
+
+strt:
+// task fivetin six
+int[] AverageLine(int[,] array)
+{
+    int[] averageLine = new int[array.GetLength(0)];
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            averageLine[i] += array[i, j];
+        }
+        averageLine[i] = averageLine[i] / array.GetLength(1);
+    }
+    return averageLine;
+}
+int Min(int[] array)
+{
+    int position = 0;
+    for (int i = 0; i < array.GetLength(0) - 1; i++)
+    {
+        if (array[position] > array[i + 1])
+            position = i + 1;
+    }
+    return position + 1;
+}
+void MinAverageLine(int[,] array)
+{
+    int[] averageLine = AverageLine(array);
+    int minLine = Min(averageLine);
+    System.Console.WriteLine($"Строка с наименьшим средним арифметическим под №{minLine}");
+}
+myIntArray = GenerateIntArray(6, 2);
+PrintIntArray(myIntArray);
+MinAverageLine(myIntArray);
